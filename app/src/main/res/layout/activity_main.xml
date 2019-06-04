@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开以太网" />
+
+    <Button
+        android:id="@+id/close"
+        android:text="关闭以太网"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/dhcp_button"
+        android:text="动态IP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/static_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="静态IP"
+        />
+
+    <EditText
+        android:id="@+id/static_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="静态IP"/>
+    <EditText
+        android:id="@+id/static_netmask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="子网掩码"/>
+    <EditText
+        android:id="@+id/static_dns1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="DNS1"/>
+    <EditText
+        android:id="@+id/static_dns2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="DNS2"/>
+    <EditText
+        android:id="@+id/static_gateway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="网关"
+        android:ems="10"/>
+</LinearLayout>
